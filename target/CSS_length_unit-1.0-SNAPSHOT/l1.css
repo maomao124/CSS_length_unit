@@ -1,0 +1,35 @@
+/*
+  Project name(项目名称)：CSS_length_unit 
+  File name(文件名): l1
+  Author(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/1/22 
+  Time(创建时间)： 13:41
+  Version(版本): 1.0
+  Description(描述)：
+  2. 绝对长度单位
+绝对长度单位表示一个真实的物理尺寸，它的大小是固定的，不会因为其它元素尺寸的变化而变化。下表中列举了 CSS 中支持的绝对长度单位：
+单位	描述	                示例
+cm	厘米	p{font-size: 0.5cm;}
+mm	毫米	p{font-size: 5mm;}
+in	英寸（1in = 96px = 2.54cm）	p{font-size: 1in;}
+px	像素（1px = 1/96in）	p{font-size: 16px;}
+pt	point，是一种专用的印刷单位“磅”，也可以称为“点”（1pt = 1/72in）	p{font-size: 16pt;}
+pc	pica，中文可称为“派卡”，印刷行业用于描述字体大小的单位，相当于我国新四号铅字的尺寸（1pc = 12pt）	p{font-size: 5pc;}
+ */
+
+.box {
+    width: 4in;
+    height: 4.5cm;
+    border: 2mm solid black;
+    font-size: 16px;
+}
+
+.pt {
+    font-size: 2pt;
+}
+
+.pc {
+    font-size: 3pc;
+}

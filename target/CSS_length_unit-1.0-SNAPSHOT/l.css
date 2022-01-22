@@ -1,0 +1,45 @@
+/*
+  Project name(项目名称)：CSS_length_unit 
+  File name(文件名): l
+  Author(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/1/22 
+  Time(创建时间)： 13:32
+  Version(版本): 1.0
+  Description(描述)：
+  1. 相对长度单位
+相对长度单位指的是这个单位没有一个固定的值，它的值受到其它元素属性（例如浏览器窗口的大小、父级元素的大小）的影响，
+在响应式布局方面相对长度单位非常适用
+单位	    描述	                                                                                                    示例
+em	相对于自身 font-size（字体大小）属性的值，如果自身没有设置，则继承父元素 font-size 属性的值，1em 等同于 font-size 属性值，例如 font-size 的值为 16px，那么 1em 就等于 16px，2em 就等于 32px	p{line-height:2em;}
+rem	相对于根元素<html>的 font-size 属性的大小，比如根元素的 font-size 是 100px，那么 1.2rem 就相当于 120px	p{font-size: 1.2rem;}
+ex	相对于所用字体中小写英文字母 x 的高度，若无法确定 x 的高度则使用 0.5em 计算	p{font-size: 1ex;}
+ch	相对于所用字体中数字 0 的高度，若无法确定 0 的高度则使用 0.5em 计算	p{line-height: 3ch}
+vw	相对于浏览器窗口的宽度，1vw = 窗口宽度的 1%	p{font-size: 5vw;}
+vh	相对于浏览器窗口的高度，1vh = 窗口高度的 1%	p{font-size: 5vh;}
+vmin	vw 与 vh 中较小的值	p{font-size: 5vmin;}
+vmax	vw 与 vh 中较大的值	p{font-size: 5vmax;}
+%	相对于父元素宽度或字体大小的百分比	div{width: 55%}
+ */
+
+.box {
+    width: 50vw;
+    height: 50vh;
+    border: 3ex solid mediumaquamarine;
+    font-size: 16px;
+}
+
+.info {
+    font-size: 2em;
+}
+
+.ex > span {
+    font-size: 3ex;
+}
+
+.ch > span {
+    font-size: 4ch;
+}
+    
+    
